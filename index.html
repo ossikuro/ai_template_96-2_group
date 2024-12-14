@@ -5,6 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!-- фавикон -->
 
+        <!-- подкючаем нормализаторы -->
+        <link rel="stylesheet" href="./style/reset.css" />
+        <link rel="stylesheet" href="./style/normalize.css" />
+
         <!-- подкючаем стили секций -->
         <link rel="stylesheet" href="./style/header.css" />
         <link rel="stylesheet" href="./style/hero.css" />
@@ -19,10 +23,33 @@
     </head>
     <body>
         <header class="header"></header>
-        <section class="hero"></section>
+        <section class="hero">
+            <div class="padded_box">
+                <div class="hero_top_layer">
+                    <img src="./assets/IMG_Hero.png" alt="" />
+                </div>
+                <div class="hero_bottom_layer">
+                    <img
+                        src="./assets/hero_bg.svg"
+                        alt="вертикальный логотип"
+                    />
+                    <div class="hero_bottom_line">
+                        <a href="#anchor_catalogue" class="catalogue_anchor"
+                            >Каталог
+                            <svg>
+                                <use
+                                    href="./assets/icon_arrow_down.svg#arrow_down"
+                                ></use>
+                            </svg>
+                        </a>
+                        <div class="hero_slogan">Украшения с душой викинга</div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="history"></section>
         <section class="values"></section>
-        <section class="catalogue">
+        <section class="catalogue" id="anchor_catalogue">
             <section class="earrings"></section>
             <section class="necklaces"></section>
             <section class="bracelets"></section>
