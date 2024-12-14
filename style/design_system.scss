@@ -115,6 +115,7 @@ $beige_5: #524843;
     max-width: 1440px;
     padding-left: 4rem;
     padding-right: 4rem;
+    margin: 0 auto;
 }
 
 @media (min-width: 769px) and (max-width: 1280px) {
@@ -135,3 +136,5 @@ $beige_5: #524843;
 body {
     background-color: $black;
 }
+
+/* ----- корневые настройки ----- */

@@ -1,6 +1,195 @@
 @charset "UTF-8";
 /* ----- подключаем шрифты ----- */
-/* ----- корневые настройки ----- */
+@font-face {
+  font-family: "Inter-regular";
+  src: url("../assets/fonts/Inter-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter-bold";
+  src: url("../assets/fonts/Inter-Bold.ttf");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Cormorant-regular";
+  src: url("../assets/fonts/Cormorant-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Cormorant-semibold";
+  src: url("../assets/fonts/Cormorant-SemiBold.ttf");
+  font-weight: 600;
+  font-style: normal;
+}
 /* ----- стили шрифтов ----- */
 /* ----- цвета и эффекты ----- */
-/* ----- размеры ----- *//*# sourceMappingURL=hero.css.map */
+/* ----- размеры ----- */
+.padded_box {
+  max-width: 1440px;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  margin: 0 auto;
+}
+
+@media (min-width: 769px) and (max-width: 1280px) {
+  .padded_box {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+@media (max-width: 768px) {
+  .padded_box {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+/* ----- корневые настройки ----- */
+body {
+  background-color: #151515;
+}
+
+/* ----- корневые настройки ----- */
+.hero {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  max-height: 100vh;
+  box-sizing: border-box;
+}
+
+.hero_top_layer {
+  position: absolute;
+  top: 6rem;
+  left: 50%;
+  width: 57.1428571429vw;
+  max-width: 56rem;
+  z-index: 100;
+  transform: translate(-50%, 0);
+}
+.hero_top_layer img {
+  width: 100%;
+}
+
+.hero_bottom_layer {
+  width: 100%;
+}
+.hero_bottom_layer .img {
+  width: 100%;
+}
+
+.hero_bottom_line {
+  padding-left: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalogue_anchor {
+  display: flex;
+  align-items: end;
+  gap: 0.5rem;
+  font-family: "Cormorant-regular", serif;
+  font-size: 1.75rem;
+  line-height: 2rem;
+  color: #fff;
+}
+.catalogue_anchor svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.catalogue_anchor:hover {
+  color: #c9ac9c;
+  transition: 0.5s;
+}
+.catalogue_anchor:hover svg {
+  animation: bounce 1s ease infinite;
+}
+.catalogue_anchor:active {
+  color: #a68f82;
+  transition: 0.5s;
+}
+
+.hero_slogan {
+  font-family: "Cormorant-regular", serif;
+  font-size: 1.75rem;
+  line-height: 2rem;
+  color: #84736a;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-0.5rem);
+  }
+  60% {
+    transform: translateY(-0.25rem);
+  }
+}
+@keyframes bounce_mob {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-0.25rem);
+  }
+  60% {
+    transform: translateY(-0.125rem);
+  }
+}
+@media (min-width: 769px) and (max-width: 1280px) {
+  .hero_bottom_line {
+    padding-left: 1rem;
+  }
+  .catalogue_anchor {
+    font-family: "Cormorant-regular", serif;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+  .catalogue_anchor svg {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+  .hero_slogan {
+    font-family: "Cormorant-regular", serif;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    color: #84736a;
+  }
+  .hero_top_layer {
+    width: 60.6060606061vw;
+  }
+}
+@media (max-width: 768px) {
+  .hero_top_layer {
+    top: 4.25rem;
+  }
+  .hero_bottom_line {
+    padding-left: 0.5rem;
+  }
+  .catalogue_anchor {
+    font-family: "Cormorant-regular", serif;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    gap: 0.25rem;
+  }
+  .catalogue_anchor svg {
+    width: 1rem;
+    height: 1rem;
+  }
+  .catalogue_anchor:hover {
+    color: #c9ac9c;
+    transition: 0.5s;
+  }
+  .catalogue_anchor:hover svg {
+    animation: bounce_mob 1s ease infinite;
+  }
+  .hero_slogan {
+    font-family: "Cormorant-regular", serif;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: #84736a;
+  }
+}/*# sourceMappingURL=hero.css.map */
