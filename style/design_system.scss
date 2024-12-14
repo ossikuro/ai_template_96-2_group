@@ -1,0 +1,137 @@
+/* ----- подключаем шрифты ----- */
+@font-face {
+    font-family: 'Inter-regular';
+    src: url('../assets/fonts/Inter-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter-bold';
+    src: url('../assets/fonts/Inter-Bold.ttf');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cormorant-regular';
+    src: url('../assets/fonts/Cormorant-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cormorant-semibold';
+    src: url('../assets/fonts/Cormorant-SemiBold.ttf');
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* ----- стили шрифтов ----- */
+
+@mixin cormorant_reg_28-32 {
+    font-family: 'Cormorant-regular', serif;
+    font-size: 1.75rem;
+    line-height: 2rem;
+}
+
+@mixin cormorant_reg_20-24 {
+    font-family: 'Cormorant-regular', serif;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+}
+
+@mixin cormorant_reg_16-32 {
+    font-family: 'Cormorant-regular', serif;
+    font-size: 1rem;
+    line-height: 1.25rem;
+}
+
+@mixin cormorant_semi_64-68 {
+    font-family: 'Cormorant-semibold', serif;
+    font-size: 4rem;
+    line-height: 4.25rem;
+}
+
+@mixin cormorant_semi_56-60 {
+    font-family: 'Cormorant-semibold', serif;
+    font-size: 3.5rem;
+    line-height: 3.75rem;
+}
+
+@mixin cormorant_semi_40-44 {
+    font-family: 'Cormorant-semibold', serif;
+    font-size: 2.5rem;
+    line-height: 2.75rem;
+}
+
+@mixin cormorant_semi_32-36 {
+    font-family: 'Cormorant-semibold', serif;
+    font-size: 2rem;
+    line-height: 2.25rem;
+}
+
+@mixin cormorant_semi_24-32 {
+    font-family: 'Cormorant-semibold', serif;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+@mixin cormorant_semi_20-28 {
+    font-family: 'Cormorant-semibold', serif;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+@mixin inter_bold-16 {
+    font-family: 'Cormorant-semibold', serif;
+    font-size: 1rem;
+    line-height: 160%;
+}
+
+@mixin inter_regular-16 {
+    font-family: 'Cormorant-semibold', serif;
+    font-size: 1rem;
+    line-height: 160%;
+}
+
+@mixin inter_regular-14 {
+    font-family: 'Cormorant-semibold', serif;
+    font-size: 0.875rem;
+    line-height: 160%;
+}
+
+/* ----- цвета и эффекты ----- */
+$white: #fff;
+$black: #151515;
+$beige_1: #c9ac9c;
+$beige_2: #a68f82;
+$beige_3: #84736a;
+$beige_4: #685c54;
+$beige_5: #524843;
+
+/* ----- размеры ----- */
+.padded_box {
+    max-width: 1440px;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+@media (min-width: 769px) and (max-width: 1280px) {
+    .padded_box {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .padded_box {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
+
+/* ----- корневые настройки ----- */
+body {
+    color: $black;
+}
