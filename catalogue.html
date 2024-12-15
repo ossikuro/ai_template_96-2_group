@@ -1,34 +1,336 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- фавикон -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- фавикон -->
 
-        <!-- подкючаем стили секций -->
-        <link rel="stylesheet" href="./style/header.css" />
-        <link rel="stylesheet" href="./style/hero.css" />
-        <link rel="stylesheet" href="./style/history.css" />
-        <link rel="stylesheet" href="./style/values.css" />
-        <link rel="stylesheet" href="./style/catalogue.css" />
-        <link rel="stylesheet" href="./style/offline.css" />
-        <link rel="stylesheet" href="./style/delivery.css" />
-        <link rel="stylesheet" href="./style/footer.css" />
+    <!-- подкючаем нормализаторы -->
+    <link rel="stylesheet" href="./style/reset.css" />
+    <link rel="stylesheet" href="./style/normalize.css" />
 
-        <title>Rumpel-Shpumpel</title>
-    </head>
-    <body>
-        <header class="header"></header>
-        <section class="hero"></section>
-        <section class="history"></section>
-        <section class="values"></section>
-        <section class="catalogue">
-            <section class="earrings"></section>
-            <section class="necklaces"></section>
-            <section class="bracelets"></section>
+    <!-- подкючаем стили секций -->
+    <link rel="stylesheet" href="./style/header.css" />
+    <link rel="stylesheet" href="./style/hero.css" />
+    <link rel="stylesheet" href="./style/history.css" />
+    <link rel="stylesheet" href="./style/values.css" />
+    <link rel="stylesheet" href="./style/catalogue.css" />
+    <link rel="stylesheet" href="./style/offline.css" />
+    <link rel="stylesheet" href="./style/delivery.css" />
+    <link rel="stylesheet" href="./style/footer.css" />
+
+    <title>Rumpel-Shpumpel</title>
+  </head>
+  <body>
+    <section class="catalogue" id="anchor_catalogue">
+      <div class="padded_box">
+        <section class="earrings">
+          <h2 class="catalogue_title">Серьги</h2>
+          <div class="catalogue_card_box">
+            <div class="catalogue_card">
+              <div class="catalogue_card_img">
+                <div class="catalogue_card_image">
+                  <img
+                    class="card_img"
+                    src="./assets/Earrings1.png"
+                    alt="Серьги"
+                  />
+                </div>
+                <p class="catalogue_card_text">
+                  Нержавеющая сталь, апатит, подвески Ромб
+                </p>
+                <div class="catalogue_card_price">
+                  <div class="catalogue_size_line">
+                    <img
+                      class="catalogue_line"
+                      src="./assets/Line.svg"
+                      alt="Линия"
+                    />
+                  </div>
+                  <p class="catalogue_price">850 ₽</p>
+                </div>
+              </div>
+            </div>
+            <div class="catalogue_card">
+              <div class="catalogue_card_img">
+                <div class="catalogue_card_image">
+                  <img
+                    class="card_img"
+                    src="./assets/Earrings2.png"
+                    alt="Серьги"
+                  />
+                </div>
+                <p class="catalogue_card_text">
+                  Цветы из нержавеющей стали, Сердолик, подвеска Серп
+                </p>
+                <div class="catalogue_card_price">
+                  <div class="catalogue_size_line">
+                    <img
+                      class="catalogue_line"
+                      src="./assets/Line.svg"
+                      alt="Линия"
+                    />
+                  </div>
+                  <p class="catalogue_price">850 ₽</p>
+                </div>
+              </div>
+            </div>
+            <div class="catalogue_card">
+              <div class="catalogue_card_img">
+                <div class="catalogue_card_image">
+                  <img
+                    class="card_img"
+                    src="./assets/Earrings3.png"
+                    alt="Серьги"
+                  />
+                </div>
+                <p class="catalogue_card_text">
+                  Нержавеющая сталь, Сахарный кварц, апатит, подвески Листья
+                </p>
+                <div class="catalogue_card_price">
+                  <div class="catalogue_size_line">
+                    <img
+                      class="catalogue_line"
+                      src="./assets/Line.svg"
+                      alt="Линия"
+                    />
+                  </div>
+                  <p class="catalogue_price">1.000 ₽</p>
+                </div>
+              </div>
+            </div>
+            <div class="catalogue_card">
+              <div class="catalogue_card_img">
+                <div class="catalogue_card_image">
+                  <img
+                    class="card_img"
+                    src="./assets/Earrings4.png"
+                    alt="Серьги"
+                  />
+                </div>
+                <p class="catalogue_card_text">
+                  Нержавеющая сталь, подвеска Солнце в капле
+                </p>
+                <div class="catalogue_card_price">
+                  <div class="catalogue_size_line">
+                    <img
+                      class="catalogue_line"
+                      src="./assets/Line.svg"
+                      alt="Линия"
+                    />
+                  </div>
+                  <p class="catalogue_price">750 ₽</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
-        <section class="offline"></section>
-        <section class="delivery"></section>
-        <footer class="footer"></footer>
-    </body>
+        <section class="necklaces">
+          <h2 class="catalogue_title">Ожерелья</h2>
+          <div class="catalogue_card_box">
+            <div class="catalogue_card">
+              <div class="catalogue_card_img">
+                <div class="catalogue_card_image">
+                  <img
+                    class="card_img"
+                    src="./assets/Necklace1.png"
+                    alt="Ожерелье"
+                  />
+                </div>
+                <p class="catalogue_card_text">
+                  Нержавеющая сталь, подвеска Солнце
+                </p>
+                <div class="catalogue_card_price">
+                  <div class="catalogue_size_line">
+                    <img
+                      class="catalogue_line"
+                      src="./assets/Line.svg"
+                      alt="Линия"
+                    />
+                  </div>
+                  <p class="catalogue_price">1.500 ₽</p>
+                </div>
+              </div>
+            </div>
+            <div class="catalogue_card">
+              <div class="catalogue_card_img">
+                <div class="catalogue_card_image">
+                  <img
+                    class="card_img"
+                    src="./assets/Necklace2.png"
+                    alt="Ожерелье"
+                  />
+                </div>
+                <p class="catalogue_card_text">
+                  Нержавеющая сталь, коралл, подвеска Вороны Одина
+                </p>
+                <div class="catalogue_card_price">
+                  <div class="catalogue_size_line">
+                    <img
+                      class="catalogue_line"
+                      src="./assets/Line.svg"
+                      alt="Линия"
+                    />
+                  </div>
+                  <p class="catalogue_price">1.700 ₽</p>
+                </div>
+              </div>
+            </div>
+            <div class="catalogue_card">
+              <div class="catalogue_card_img">
+                <div class="catalogue_card_image">
+                  <img
+                    class="card_img"
+                    src="./assets/Necklace3.png"
+                    alt="Ожерелье"
+                  />
+                </div>
+                <p class="catalogue_card_text">
+                  Нержавеющая сталь, аметист, бусины ассиметричные (стекло)
+                </p>
+                <div class="catalogue_card_price">
+                  <div class="catalogue_size_line">
+                    <img
+                      class="catalogue_line"
+                      src="./assets/Line.svg"
+                      alt="Линия"
+                    />
+                  </div>
+                  <p class="catalogue_price">1.300 ₽</p>
+                </div>
+              </div>
+            </div>
+            <div class="catalogue_card">
+              <div class="catalogue_card_img">
+                <div class="catalogue_card_image">
+                  <img
+                    class="card_img"
+                    src="./assets/Necklace4.png"
+                    alt="Ожерелье"
+                  />
+                </div>
+                <p class="catalogue_card_text">
+                  Нержавеющая сталь, подвеска Русалка
+                </p>
+                <div class="catalogue_card_price">
+                  <div class="catalogue_size_line">
+                    <img
+                      class="catalogue_line"
+                      src="./assets/Line.svg"
+                      alt="Линия"
+                    />
+                  </div>
+                  <p class="catalogue_price">1.500 ₽</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="bracelets">
+          <h2 class="catalogue_title">Браслеты</h2>
+          <div class="catalogue_card_box">
+            <div class="catalogue_card">
+              <div class="catalogue_card_img">
+                <div class="catalogue_card_image">
+                  <img
+                    class="card_img"
+                    src="./assets/Bracelet1.png"
+                    alt="Браслет"
+                  />
+                </div>
+                <p class="catalogue_card_text">
+                  Матовый тигровый глаз, цитрин, бижутерные подвески Гнезда
+                </p>
+                <div class="catalogue_card_price">
+                  <div class="catalogue_size_line">
+                    <img
+                      class="catalogue_line"
+                      src="./assets/Line.svg"
+                      alt="Линия"
+                    />
+                  </div>
+                  <p class="catalogue_price">1.000 ₽</p>
+                </div>
+              </div>
+            </div>
+            <div class="catalogue_card">
+              <div class="catalogue_card_img">
+                <div class="catalogue_card_image">
+                  <img
+                    class="card_img"
+                    src="./assets/Bracelet2.png"
+                    alt="Браслет"
+                  />
+                </div>
+                <p class="catalogue_card_text">
+                  Гематит, крошка коралла, бусины коралл, бижутерная подвеска
+                  Звезда
+                </p>
+                <div class="catalogue_card_price">
+                  <div class="catalogue_size_line">
+                    <img
+                      class="catalogue_line"
+                      src="./assets/Line.svg"
+                      alt="Линия"
+                    />
+                  </div>
+                  <p class="catalogue_price">850 ₽</p>
+                </div>
+              </div>
+            </div>
+            <div class="catalogue_card">
+              <div class="catalogue_card_img">
+                <div class="catalogue_card_image">
+                  <img
+                    class="card_img"
+                    src="./assets/Bracelet3.png"
+                    alt="Браслет"
+                  />
+                </div>
+                <p class="catalogue_card_text">
+                  Аметист, апатит, бижутерная подвеска Лист
+                </p>
+                <div class="catalogue_card_price">
+                  <div class="catalogue_size_line">
+                    <img
+                      class="catalogue_line"
+                      src="./assets/Line.svg"
+                      alt="Линия"
+                    />
+                  </div>
+                  <p class="catalogue_price">1.300 ₽</p>
+                </div>
+              </div>
+            </div>
+            <div class="catalogue_card">
+              <div class="catalogue_card_img">
+                <div class="catalogue_card_image">
+                  <img
+                    class="card_img"
+                    src="./assets/Bracelet4.png"
+                    alt="Браслет"
+                  />
+                </div>
+                <p class="catalogue_card_text">Нержавеющая сталь</p>
+                <div class="catalogue_card_price">
+                  <div class="catalogue_size_line">
+                    <img
+                      class="catalogue_line"
+                      src="./assets/Line.svg"
+                      alt="Линия"
+                    />
+                  </div>
+                  <p class="catalogue_price">700 ₽</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="bracelets"></section>
+      </div>
+    </section>
+    <section class="offline"></section>
+    <section class="delivery"></section>
+    <footer class="footer"></footer>
+  </body>
 </html>
