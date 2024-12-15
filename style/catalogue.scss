@@ -1,1 +1,61 @@
 @import 'design_system.scss';
+
+// Заголовок секции каталога
+.catalogue_title {
+  @include cormorant_semi_64-68;
+  color: $white;
+  margin: 5.25rem 0 2rem 0;
+}
+
+// Коробка с карточками
+.catalogue_card_box {
+  display: flex;
+  justify-content: space-between;
+  color: $white;
+}
+
+.card_img {
+object-fit: cover;
+width: 100%;
+transition: 1s; /* Время эффекта */
+display: block; 
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+.catalogue_card { 
+  width: 24%;
+}
+
+.catalogue_card_text {
+  @include inter_regular-16; 
+  margin-top: 1rem;
+  padding: 0 0.5rem 0 0.5rem;
+  width: 80%;
+}
+
+.catalogue_line {
+  width: 100%;
+}
+
+.catalogue_card_price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.5rem 0 0.5rem;
+}
+
+.catalogue_price {
+  @include cormorant_semi_40-44;
+}
+
+.catalogue_size_line {
+  width: 60%;
+}
+
+.catalogue_card_image {
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 1.5rem;
+}

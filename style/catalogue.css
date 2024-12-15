@@ -1,6 +1,118 @@
 @charset "UTF-8";
 /* ----- подключаем шрифты ----- */
-/* ----- корневые настройки ----- */
+@font-face {
+  font-family: "Inter-regular";
+  src: url("../assets/fonts/Inter-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter-bold";
+  src: url("../assets/fonts/Inter-Bold.ttf");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Cormorant-regular";
+  src: url("../assets/fonts/Cormorant-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Cormorant-semibold";
+  src: url("../assets/fonts/Cormorant-SemiBold.ttf");
+  font-weight: 600;
+  font-style: normal;
+}
 /* ----- стили шрифтов ----- */
 /* ----- цвета и эффекты ----- */
-/* ----- размеры ----- *//*# sourceMappingURL=catalogue.css.map */
+/* ----- размеры ----- */
+.padded_box {
+  max-width: 1440px;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  margin: 0 auto;
+}
+
+@media (min-width: 769px) and (max-width: 1280px) {
+  .padded_box {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+@media (max-width: 768px) {
+  .padded_box {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+/* ----- корневые настройки ----- */
+body {
+  background-color: #151515;
+}
+
+/* ----- корневые настройки ----- */
+.catalogue_title {
+  font-family: "Cormorant-semibold", serif;
+  font-size: 4rem;
+  line-height: 4.25rem;
+  color: #fff;
+  margin: 5.25rem 0 2rem 0;
+}
+
+.catalogue_card_box {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.card_img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  transition: 1s; /* Время эффекта */
+  display: block;
+}
+.card_img:hover {
+  transform: scale(1.2);
+}
+
+.catalogue_card {
+  width: 24%;
+}
+
+.catalogue_card_text {
+  font-family: "Cormorant-semibold", serif;
+  font-size: 1rem;
+  line-height: 160%;
+  margin-top: 1rem;
+  padding: 0 0.5rem 0 0.5rem;
+  width: 80%;
+}
+
+.catalogue_line {
+  width: 100%;
+}
+
+.catalogue_card_price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.5rem 0 0.5rem;
+}
+
+.catalogue_price {
+  font-family: "Cormorant-semibold", serif;
+  font-size: 2.5rem;
+  line-height: 2.75rem;
+}
+
+.catalogue_size_line {
+  width: 60%;
+}
+
+.catalogue_card_image {
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 1.5rem;
+}/*# sourceMappingURL=catalogue.css.map */
