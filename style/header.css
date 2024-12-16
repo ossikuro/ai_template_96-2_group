@@ -47,8 +47,12 @@
   }
 }
 /* ----- корневые настройки ----- */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #151515;
 }
 
-/* ----- корневые настройки ----- *//*# sourceMappingURL=header.css.map */
+/* ----- кнопки и ссылки ----- *//*# sourceMappingURL=header.css.map */

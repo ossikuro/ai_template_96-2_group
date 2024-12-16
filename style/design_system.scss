@@ -162,3 +162,34 @@ body {
         background-color: $beige_2;
     }
 }
+
+@mixin footer_button {
+    display: flex;
+    gap: 0.25rem;
+    width: fit-content;
+    color: $beige_4;
+    fill: $beige_4;
+    @include cormorant_reg_20-24;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    cursor: pointer;
+
+    svg {
+        width: 1.5rem;
+        height: 1.5rem;
+        display: block;
+        use {
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    &:hover {
+        color: $beige_2;
+        fill: $beige_2;
+    }
+    &:active {
+        color: $beige_3;
+        fill: $beige_3;
+    }
+}

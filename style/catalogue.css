@@ -47,10 +47,15 @@
   }
 }
 /* ----- корневые настройки ----- */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #151515;
 }
 
+/* ----- кнопки и ссылки ----- */
 .catalogue_title {
   font-family: "Cormorant-semibold", serif;
   font-size: 4rem;
@@ -81,7 +86,7 @@ body {
 }
 
 .catalogue_card_text {
-  font-family: "Cormorant-semibold", serif;
+  font-family: "Inter-regular", serif;
   font-size: 1rem;
   line-height: 160%;
   margin-top: 1rem;
@@ -115,4 +120,3 @@ body {
   overflow: hidden;
   border-radius: 1.5rem;
 }/*# sourceMappingURL=catalogue.css.map */
-
