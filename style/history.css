@@ -1,6 +1,253 @@
 @charset "UTF-8";
 /* ----- подключаем шрифты ----- */
-/* ----- корневые настройки ----- */
+@font-face {
+  font-family: "Inter-regular";
+  src: url("../assets/fonts/Inter-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter-bold";
+  src: url("../assets/fonts/Inter-Bold.ttf");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Cormorant-regular";
+  src: url("../assets/fonts/Cormorant-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Cormorant-semibold";
+  src: url("../assets/fonts/Cormorant-SemiBold.ttf");
+  font-weight: 600;
+  font-style: normal;
+}
 /* ----- стили шрифтов ----- */
 /* ----- цвета и эффекты ----- */
-/* ----- размеры ----- *//*# sourceMappingURL=history.css.map */
+/* ----- размеры ----- */
+.padded_box {
+  max-width: 1440px;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  margin: 0 auto;
+}
+
+@media (min-width: 769px) and (max-width: 1280px) {
+  .padded_box {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+@media (max-width: 768px) {
+  .padded_box {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+/* ----- корневые настройки ----- */
+body {
+  background-color: #151515;
+}
+
+/* ----- кнопки и ссылки ----- */
+.history {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.history_content {
+  display: flex;
+  gap: 6rem;
+}
+
+/* текстовая часть */
+.history_text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  max-width: calc(100% - 35.5rem - 4rem);
+  color: #fff;
+  font-family: "Inter-regular", serif;
+  font-size: 1rem;
+  line-height: 160%;
+}
+
+.history_title {
+  font-family: "Cormorant-semibold", serif;
+  font-size: 4rem;
+  line-height: 4.25rem;
+}
+
+.history_title_hilight {
+  color: #a68f82;
+}
+
+.history_button {
+  margin-top: 1.25rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  color: #fff;
+  background-color: #84736a;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+.history_button .text {
+  font-family: "Inter-bold", serif;
+  font-size: 1rem;
+  line-height: 160%;
+  padding: 0 1.75rem;
+}
+.history_button:hover {
+  background-color: #c9ac9c;
+}
+.history_button:active {
+  background-color: #a68f82;
+}
+
+/* картинки */
+.history_images {
+  width: 35.5rem;
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+
+.history_author_img {
+  position: relative;
+  top: 0;
+  left: 3rem;
+  width: 29rem;
+  border-radius: 1.5rem;
+}
+
+.history_example_img {
+  position: relative;
+  top: -5rem;
+  left: 16.5rem;
+  width: 19rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 -1rem 1.5rem rgba(23, 36, 65, 0.16);
+}
+
+.history_animated_label {
+  position: relative;
+  top: -30rem;
+}
+
+.rotate {
+  width: 9.5rem;
+  height: 9.5rem;
+  background-image: url(../assets/history_spinning_circle.svg);
+  animation: spinner 12s linear infinite;
+}
+
+.rotate_star {
+  position: absolute;
+  top: 4.75rem;
+  left: 4.75rem;
+  transform: translate(-50%, -50%);
+}
+
+@media (min-width: 769px) and (max-width: 1280px) {
+  .history {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .history_content {
+    gap: 2rem;
+  }
+  /* текстовая часть */
+  .history_text {
+    max-width: calc(100% - 24.75rem - 2rem);
+  }
+  .history_title {
+    font-family: "Cormorant-semibold", serif;
+    font-size: 3.5rem;
+    line-height: 3.75rem;
+  }
+  /* картинки */
+  .history_images {
+    width: 24.75rem;
+  }
+  .history_author_img {
+    width: 19.25rem;
+    border-radius: 1rem;
+  }
+  .history_example_img {
+    top: -4rem;
+    left: 12rem;
+    width: 12.5rem;
+    border-radius: 1rem;
+  }
+  .history_animated_label {
+    top: -20rem;
+  }
+}
+@media (max-width: 768px) {
+  .history {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  .history_content {
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+  /* текстовая часть */
+  .history_text {
+    max-width: 100%;
+  }
+  .history_text p {
+    font-family: "Inter-regular", serif;
+    font-size: 0.875rem;
+    line-height: 160%;
+  }
+  .history_title {
+    font-family: "Cormorant-semibold", serif;
+    font-size: 2rem;
+    line-height: 2.25rem;
+  }
+  .history_button {
+    align-self: center;
+    width: 100%;
+    max-width: 26rem;
+    box-sizing: border-box;
+  }
+  .history_button .text {
+    text-align: center;
+  }
+  /* картинки */
+  .history_images {
+    height: calc((100vw - 3rem) * 3 / 4);
+    width: 100%;
+  }
+  .history_author_img {
+    top: 0;
+    left: 0;
+    width: calc(50% + 3rem);
+    border-radius: 0.5rem;
+  }
+  .history_example_img {
+    position: relative;
+    top: auto;
+    bottom: 1rem;
+    left: calc(50% - 3rem);
+    width: calc(50% + 3rem);
+    transform: translateY(-100%);
+    border-radius: 0.5rem;
+  }
+  .history_animated_label {
+    position: relative;
+    top: -100%;
+    left: auto;
+    right: 9.5rem;
+    transform: translate(100%, -50%);
+  }
+}
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}/*# sourceMappingURL=history.css.map */
