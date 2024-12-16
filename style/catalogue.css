@@ -51,7 +51,6 @@ body {
   background-color: #151515;
 }
 
-/* ----- корневые настройки ----- */
 .catalogue_title {
   font-family: "Cormorant-semibold", serif;
   font-size: 4rem;
@@ -116,3 +115,4 @@ body {
   overflow: hidden;
   border-radius: 1.5rem;
 }/*# sourceMappingURL=catalogue.css.map */
+
