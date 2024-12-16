@@ -47,21 +47,27 @@
   }
 }
 /* ----- корневые настройки ----- */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #151515;
 }
 
-/* ----- корневые настройки ----- */
+/* ----- кнопки и ссылки ----- */
 .hero {
   padding-top: 4rem;
   padding-bottom: 4rem;
-  max-height: 100vh;
   box-sizing: border-box;
+  position: relative;
 }
 
 .hero_top_layer {
+  display: flex;
+  align-items: center;
   position: absolute;
-  top: 6rem;
+  top: 2rem;
   left: 50%;
   width: 57.1428571429vw;
   max-width: 56rem;
@@ -70,19 +76,30 @@ body {
 }
 .hero_top_layer img {
   width: 100%;
+  max-width: 56rem;
+  max-height: 80vh;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .hero_bottom_layer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
   width: 100%;
 }
-.hero_bottom_layer .img {
+.hero_bottom_layer img {
   width: 100%;
+  max-width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .hero_bottom_line {
-  padding-left: 1.5rem;
+  margin-top: 2rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .catalogue_anchor {
@@ -90,8 +107,8 @@ body {
   align-items: end;
   gap: 0.5rem;
   font-family: "Cormorant-regular", serif;
-  font-size: 1.75rem;
-  line-height: 2rem;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
   color: #fff;
 }
 .catalogue_anchor svg {
@@ -110,11 +127,8 @@ body {
   transition: 0.5s;
 }
 
-.hero_slogan {
-  font-family: "Cormorant-regular", serif;
-  font-size: 1.75rem;
-  line-height: 2rem;
-  color: #84736a;
+#anchor_catalogue {
+  scroll-behavior: smooth;
 }
 
 @keyframes bounce {
@@ -139,9 +153,19 @@ body {
     transform: translateY(-0.125rem);
   }
 }
+@media (max-height: 900px) {
+  .hero_top_layer {
+    width: 50vw;
+    max-width: 48rem;
+    top: 1rem;
+  }
+  .hero_bottom_layer img {
+    max-height: calc(100vh - 10rem);
+  }
+}
 @media (min-width: 769px) and (max-width: 1280px) {
   .hero_bottom_line {
-    padding-left: 1rem;
+    margin-top: 1.5rem;
   }
   .catalogue_anchor {
     font-family: "Cormorant-regular", serif;
@@ -167,7 +191,7 @@ body {
     top: 4.25rem;
   }
   .hero_bottom_line {
-    padding-left: 0.5rem;
+    margin-top: 1rem;
   }
   .catalogue_anchor {
     font-family: "Cormorant-regular", serif;

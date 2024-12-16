@@ -133,6 +133,10 @@ $beige_5: #524843;
 }
 
 /* ----- корневые настройки ----- */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: $black;
 }
