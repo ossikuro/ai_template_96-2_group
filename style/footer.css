@@ -47,8 +47,81 @@
   }
 }
 /* ----- корневые настройки ----- */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #151515;
 }
 
-/* ----- корневые настройки ----- *//*# sourceMappingURL=footer.css.map */
+/* ----- кнопки и ссылки ----- */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
+}
+
+.logo {
+  height: 1.5rem;
+  width: 11.25rem;
+  fill: #685c54;
+}
+.logo svg {
+  height: 100%;
+  width: 100%;
+}
+.logo use {
+  height: 100%;
+  width: 100%;
+}
+
+.footer_buttons {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer_button {
+  display: flex;
+  gap: 0.25rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #685c54;
+  fill: #685c54;
+  font-family: "Cormorant-regular", serif;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  cursor: pointer;
+}
+.footer_button svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: block;
+}
+.footer_button svg use {
+  height: 100%;
+  width: 100%;
+}
+.footer_button:hover {
+  color: #a68f82;
+  fill: #a68f82;
+}
+.footer_button:active {
+  color: #84736a;
+  fill: #84736a;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .footer_buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+}/*# sourceMappingURL=footer.css.map */
