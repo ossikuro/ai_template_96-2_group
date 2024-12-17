@@ -1,1 +1,39 @@
 @import 'design_system.scss';
+
+
+.values {
+  background-color: $grey;
+}
+
+// Секция коробка для ценностей
+.values_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+// Одна часть коробки
+.values_box_image {
+  padding: 4rem 0;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: calc(100%/3 - 8rem);
+  text-align: center;
+}
+
+// Заголовок одной части
+.values_title {
+  color: $beige_1;
+  @include cormorant_semi_24-32;
+  text-transform: uppercase; 
+  margin-top: 1.5rem;
+}
+
+// Текс одной части
+.values_text {
+  color: $white;
+  @include inter_regular-16;
+  margin-top: 0.5rem;
+}
+
