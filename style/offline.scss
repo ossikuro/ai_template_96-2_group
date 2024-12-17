@@ -1,1 +1,98 @@
 @import 'design_system.scss';
+
+//  Заголовок секции
+.offline_title {
+  @include cormorant_semi_64-68;
+  color: $white;
+}
+
+// Корбка для секции
+.box_map {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box_map_bar {
+  width: calc(100% - 11rem);
+  &:first-of-type {
+    margin-right: 3rem;
+  }
+  margin-bottom: 4.25rem;
+}
+
+.map_frame {
+  border-radius: 1.75rem;
+  height: 20rem;
+  border: none;
+  width: 100%;
+}
+
+.title_cafe {
+  color: $beige_2;
+  @include inter_regular-16;
+  margin-top: 3rem;
+}
+
+.name_cafe {
+  color: $white;
+  @include cormorant_semi_32-36;
+}
+
+.adress_cafe {
+  color: $white;
+  @include inter_regular-16;
+  margin-top: 1rem;
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .map_frame {
+    height: 18rem;
+  }
+
+  .title_cafe {
+    margin-top: 2rem;
+  }
+  .adress_cafe {
+    margin-top: 0.5rem;
+  }
+
+  .box_map_bar {
+    margin-bottom: 3rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .map_frame {
+    height: 13.5rem;
+  }
+
+  .box_map_bar:first-of-type {
+    margin-right: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .box_map {
+    display: block;
+  }
+
+  .catalogue_title {
+    @include cormorant_semi_32-36;
+  }
+
+  .title_cafe, .adress_cafe {
+    @include inter_regular-14;
+  }
+
+  .title_cafe {
+    margin-top: 2rem;
+  }
+
+  .name_cafe {
+    @include cormorant_semi_24-32;
+  }
+
+  .box_map_bar {
+    margin-bottom: 3rem;
+  }
+}
