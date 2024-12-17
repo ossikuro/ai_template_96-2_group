@@ -55,4 +55,102 @@ body {
   background-color: #151515;
 }
 
-/* ----- кнопки и ссылки ----- *//*# sourceMappingURL=offline.css.map */
+/* ----- кнопки и ссылки ----- */
+.offline_title {
+  font-family: "Cormorant-semibold", serif;
+  font-size: 4rem;
+  line-height: 4.25rem;
+  color: #fff;
+}
+
+.box_map {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box_map_bar {
+  width: calc(100% - 11rem);
+  margin-bottom: 4.25rem;
+}
+.box_map_bar:first-of-type {
+  margin-right: 3rem;
+}
+
+.map_frame {
+  border-radius: 1.75rem;
+  height: 20rem;
+  border: none;
+  width: 100%;
+}
+
+.title_cafe {
+  color: #a68f82;
+  font-family: "Inter-regular", serif;
+  font-size: 1rem;
+  line-height: 160%;
+  margin-top: 3rem;
+}
+
+.name_cafe {
+  color: #fff;
+  font-family: "Cormorant-semibold", serif;
+  font-size: 2rem;
+  line-height: 2.25rem;
+}
+
+.adress_cafe {
+  color: #fff;
+  font-family: "Inter-regular", serif;
+  font-size: 1rem;
+  line-height: 160%;
+  margin-top: 1rem;
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .map_frame {
+    height: 18rem;
+  }
+  .title_cafe {
+    margin-top: 2rem;
+  }
+  .adress_cafe {
+    margin-top: 0.5rem;
+  }
+  .box_map_bar {
+    margin-bottom: 3rem;
+  }
+}
+@media (max-width: 1024px) {
+  .map_frame {
+    height: 13.5rem;
+  }
+  .box_map_bar:first-of-type {
+    margin-right: 1.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .box_map {
+    display: block;
+  }
+  .catalogue_title {
+    font-family: "Cormorant-semibold", serif;
+    font-size: 2rem;
+    line-height: 2.25rem;
+  }
+  .title_cafe, .adress_cafe {
+    font-family: "Inter-regular", serif;
+    font-size: 0.875rem;
+    line-height: 160%;
+  }
+  .title_cafe {
+    margin-top: 2rem;
+  }
+  .name_cafe {
+    font-family: "Cormorant-semibold", serif;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .box_map_bar {
+    margin-bottom: 3rem;
+  }
+}/*# sourceMappingURL=offline.css.map */
