@@ -132,6 +132,12 @@ body {
   .box_map {
     display: block;
   }
+  .box_map_bar {
+    width: 100%;
+  }
+  .box_map_bar:first-of-type {
+    margin-right: 0;
+  }
   .catalogue_title {
     font-family: "Cormorant-semibold", serif;
     font-size: 2rem;

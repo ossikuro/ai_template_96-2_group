@@ -76,6 +76,13 @@
     display: block;
   }
 
+  .box_map_bar {
+    width: 100%;
+    &:first-of-type {
+      margin-right: 0;
+    }
+  }
+
   .catalogue_title {
     @include cormorant_semi_32-36;
   }
