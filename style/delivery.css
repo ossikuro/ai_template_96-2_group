@@ -133,4 +133,8 @@ body {
   .delivery_box_image:last-of-type {
     padding-bottom: 1.5rem;
   }
+  .box_img {
+    width: 4rem;
+    height: 2rem;
+  }
 }/*# sourceMappingURL=delivery.css.map */
