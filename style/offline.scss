@@ -30,12 +30,13 @@
 .title_cafe {
   color: $beige_2;
   @include inter_regular-16;
-  margin-top: 3rem;
+  margin: 0;
 }
 
 .name_cafe {
   color: $white;
   @include cormorant_semi_32-36;
+  margin: 0 0 1rem 0;
 }
 
 .adress_cafe {

@@ -88,7 +88,7 @@ body {
   font-family: "Inter-regular", serif;
   font-size: 1rem;
   line-height: 160%;
-  margin-top: 3rem;
+  margin: 0;
 }
 
 .name_cafe {
@@ -96,6 +96,7 @@ body {
   font-family: "Cormorant-semibold", serif;
   font-size: 2rem;
   line-height: 2.25rem;
+  margin: 0 0 1rem 0;
 }
 
 .adress_cafe {
