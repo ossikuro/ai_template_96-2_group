@@ -1,1 +1,84 @@
 @import 'design_system.scss';
+
+.delivery {
+  background-color: $grey;
+}
+
+// Секция коробка для доставки
+.delivery_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delivery_box_text {
+  margin-top: 1rem;
+}
+
+// Одна часть коробки
+.delivery_box_image {
+  padding: 8rem 0;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: calc(100%/3 - 4rem);
+  text-align: center;
+}
+
+// Заголовок одной части
+.delivery_title {
+  color: $white;
+  @include cormorant_semi_32-36; 
+  margin: 0;
+}
+
+// Текс одной части
+.delivery_text {
+  color: $beige_3;
+  @include inter_regular-16;
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+
+  .delivery_box {
+    display: block;
+  }
+
+  .delivery_box_image {
+    flex-direction: row;
+    text-align: left;
+    width: 100%;
+    padding: 3rem 0 0 0; 
+      &:last-of-type { 
+        padding-bottom: 3rem;
+      }
+  }
+
+  .box_img {
+    width: 6rem;
+    height: 3rem;
+  }
+
+  .delivery_box_text {
+    padding-left: 1rem;
+  }
+
+  .delivery_title {
+    @include cormorant_semi_20-28;
+  }
+}
+
+@media (max-width: 768px){
+
+  .delivery_text {
+    @include inter_regular-14;
+  }
+
+  .delivery_box_image {
+    padding: 1.5rem 0 0 0; 
+      &:last-of-type { 
+        padding-bottom: 1.5rem;
+      }
+  }
+}
