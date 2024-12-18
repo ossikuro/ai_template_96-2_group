@@ -71,7 +71,7 @@ body {
   align-items: center;
   display: flex;
   flex-direction: column;
-  width: calc(33.3333333333% - 8rem);
+  width: calc(33.3333333333% - 4rem);
   text-align: center;
 }
 
@@ -81,7 +81,7 @@ body {
   font-size: 1.5rem;
   line-height: 2rem;
   text-transform: uppercase;
-  margin-top: 1.5rem;
+  margin: 1.5rem 0 0.5rem 0;
 }
 
 .values_text {
@@ -89,5 +89,47 @@ body {
   font-family: "Inter-regular", serif;
   font-size: 1rem;
   line-height: 160%;
-  margin-top: 0.5rem;
+}
+
+@media (max-width: 1024px) {
+  .values_box {
+    display: block;
+  }
+  .values_box_image {
+    flex-direction: row;
+    text-align: left;
+    width: 100%;
+    padding: 3rem 0 0 0;
+  }
+  .values_box_image:last-of-type {
+    padding-bottom: 3rem;
+  }
+  .box_img {
+    width: 3rem;
+    height: 3rem;
+  }
+  .values_box_text {
+    padding-left: 3rem;
+  }
+  .values_title {
+    font-family: "Inter-bold", serif;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+@media (max-width: 768px) {
+  .values_box_text {
+    padding-left: 1.5rem;
+  }
+  .values_text {
+    font-family: "Inter-regular", serif;
+    font-size: 0.875rem;
+    line-height: 160%;
+  }
+  .values_box_image {
+    padding: 1.5rem 0 0 0;
+  }
+  .values_box_image:last-of-type {
+    padding-bottom: 1.5rem;
+  }
 }/*# sourceMappingURL=values.css.map */
