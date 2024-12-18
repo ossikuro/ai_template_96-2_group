@@ -30,12 +30,13 @@
 .title_cafe {
   color: $beige_2;
   @include inter_regular-16;
-  margin-top: 3rem;
+  margin: 0;
 }
 
 .name_cafe {
   color: $white;
   @include cormorant_semi_32-36;
+  margin: 0 0 1rem 0;
 }
 
 .adress_cafe {
@@ -76,7 +77,14 @@
     display: block;
   }
 
-  .catalogue_title {
+  .box_map_bar {
+    width: 100%;
+    &:first-of-type {
+      margin-right: 0;
+    }
+  }
+
+  .offline_title {
     @include cormorant_semi_32-36;
   }
 
