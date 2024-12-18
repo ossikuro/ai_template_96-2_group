@@ -1,34 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- фавикон -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- фавикон -->
 
-        <!-- подкючаем стили секций -->
-        <link rel="stylesheet" href="./style/header.css" />
-        <link rel="stylesheet" href="./style/hero.css" />
-        <link rel="stylesheet" href="./style/history.css" />
-        <link rel="stylesheet" href="./style/values.css" />
-        <link rel="stylesheet" href="./style/catalogue.css" />
-        <link rel="stylesheet" href="./style/offline.css" />
-        <link rel="stylesheet" href="./style/delivery.css" />
-        <link rel="stylesheet" href="./style/footer.css" />
+    <!-- подкючаем стили секций -->
+    <link rel="stylesheet" href="./style/header.css" />
+    <link rel="stylesheet" href="./style/hero.css" />
+    <link rel="stylesheet" href="./style/history.css" />
+    <link rel="stylesheet" href="./style/values.css" />
+    <link rel="stylesheet" href="./style/catalogue.css" />
+    <link rel="stylesheet" href="./style/offline.css" />
+    <link rel="stylesheet" href="./style/delivery.css" />
+    <link rel="stylesheet" href="./style/footer.css" />
 
-        <title>Rumpel-Shpumpel</title>
-    </head>
-    <body>
-        <header class="header"></header>
-        <section class="hero"></section>
-        <section class="history"></section>
-        <section class="values"></section>
-        <section class="catalogue">
-            <section class="earrings"></section>
-            <section class="necklaces"></section>
-            <section class="bracelets"></section>
-        </section>
-        <section class="offline"></section>
-        <section class="delivery"></section>
-        <footer class="footer"></footer>
-    </body>
+    <title>Rumpel-Shpumpel</title>
+  </head>
+  <body>
+    <header class="header"></header>
+    <section class="hero"></section>
+    <section class="history"></section>
+    <section class="values"></section>
+    <section class="catalogue">
+      <section class="earrings"></section>
+      <section class="necklaces"></section>
+      <section class="bracelets"></section>
+    </section>
+    <section class="offline"></section>
+    <section class="delivery">
+      <div class="padded_box">
+        <div class="delivery_box">
+          <div class="delivery_box_image">
+            <div>
+              <a href="https://market.yandex.ru" target="_blank">
+                <img
+                  class="box_img"
+                  src="./assets/yandex_market.svg"
+                  alt="Яндекс маркет"
+              /></a>
+            </div>
+            <div class="delivery_box_text">
+              <p class="delivery_text">Доставка</p>
+              <h3 class="delivery_title">Пункты выдачи Яндекс</h3>
+            </div>
+          </div>
+          <div class="delivery_box_image">
+            <div>
+              <a href="https://www.pochta.ru/" target="_blank">
+                <img
+                  class="box_img"
+                  src="./assets/Russian_Post.svg"
+                  alt="Почта России"
+              /></a>
+            </div>
+            <div class="delivery_box_text">
+              <p class="delivery_text">Доставка</p>
+              <h3 class="delivery_title">Почта России</h3>
+            </div>
+          </div>
+          <div class="delivery_box_image">
+            <div>
+              <a href="https://sbp.nspk.ru/" target="_blank">
+                <img
+                  class="box_img"
+                  src="./assets/SPB_logotip.svg"
+                  alt="Система быстрых платежей"
+              /></a>
+            </div>
+            <div class="delivery_box_text">
+              <p class="delivery_text">Оплата</p>
+              <h3 class="delivery_title">Перевод на карту СБП</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer"></footer>
+  </body>
 </html>
