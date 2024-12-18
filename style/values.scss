@@ -1,6 +1,5 @@
 @import 'design_system.scss';
 
-
 .values {
   background-color: $grey;
 }
@@ -18,7 +17,7 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  width: calc(100%/3 - 8rem);
+  width: calc(100%/3 - 4rem);
   text-align: center;
 }
 
@@ -27,13 +26,60 @@
   color: $beige_1;
   @include cormorant_semi_24-32;
   text-transform: uppercase; 
-  margin-top: 1.5rem;
+  margin: 1.5rem 0 0.5rem 0;
 }
 
 // Текс одной части
 .values_text {
   color: $white;
   @include inter_regular-16;
-  margin-top: 0.5rem;
+}
+
+@media (max-width: 1024px) {
+
+  .values_box {
+    display: block;
+  }
+
+  .values_box_image {
+    flex-direction: row;
+    text-align: left;
+    width: 100%;
+    padding: 3rem 0 0 0; 
+      &:last-of-type { 
+        padding-bottom: 3rem;
+      }
+  }
+
+  .box_img {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .values_box_text {
+    padding-left: 3rem;
+  }
+
+  .values_title {
+    @include cormorant_semi_20-28;
+  }
+}
+
+@media (max-width: 768px){
+
+  .values_box_text {
+    padding-left: 1.5rem;
+  }
+
+  .values_text {
+    @include inter_regular-14;
+  }
+
+  .values_box_image {
+    padding: 1.5rem 0 0 0; 
+      &:last-of-type { 
+        padding-bottom: 1.5rem;
+      }
+  }
 }
 
