@@ -68,13 +68,15 @@ body {
   display: flex;
   justify-content: space-between;
   color: #fff;
+  margin-bottom: 5rem;
 }
 
 .card_img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
-  transition: 1s; /* Время эффекта */
+  cursor: pointer;
+  transition: 0.4s; /* Время эффекта */
   display: block;
 }
 .card_img:hover {
@@ -92,6 +94,7 @@ body {
   margin-top: 1rem;
   padding: 0 0.5rem 0 0.5rem;
   width: 80%;
+  height: 4rem;
 }
 
 .catalogue_line {
@@ -109,14 +112,59 @@ body {
   font-family: "Cormorant-semibold", serif;
   font-size: 2.5rem;
   line-height: 2.75rem;
+  white-space: nowrap;
+  margin-left: 1rem;
 }
 
 .catalogue_size_line {
-  width: 60%;
+  width: 100%;
 }
 
 .catalogue_card_image {
-  display: inline-block;
   overflow: hidden;
   border-radius: 1.5rem;
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .catalogue_price {
+    font-family: "Cormorant-semibold", serif;
+    font-size: 2.5rem;
+    line-height: 2.75rem;
+  }
+  .catalogue_card_text {
+    height: 6rem;
+  }
+}
+@media (max-width: 1024px) {
+  .catalogue_title {
+    font-family: "Cormorant-semibold", serif;
+    font-size: 2rem;
+    line-height: 2.25rem;
+  }
+  .catalogue_card_text {
+    height: 6rem;
+  }
+}
+@media (max-width: 768px) {
+  .catalogue_card_text {
+    font-family: "Inter-regular", serif;
+    font-size: 0.875rem;
+    line-height: 160%;
+  }
+  .catalogue_price {
+    font-family: "Cormorant-semibold", serif;
+    font-size: 2rem;
+    line-height: 2.25rem;
+  }
+  .catalogue_card_box {
+    display: block;
+    margin-top: 2rem;
+  }
+  .catalogue_card_text {
+    height: 3rem;
+  }
+  .catalogue_card {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
 }/*# sourceMappingURL=catalogue.css.map */
