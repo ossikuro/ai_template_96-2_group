@@ -48,7 +48,7 @@
 }
 /* ----- корневые настройки ----- */
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
 }
 
 body {
@@ -145,7 +145,8 @@ body {
     font-size: 2rem;
     line-height: 2.25rem;
   }
-  .title_cafe, .adress_cafe {
+  .title_cafe,
+  .adress_cafe {
     font-family: "Inter-regular", serif;
     font-size: 0.875rem;
     line-height: 160%;

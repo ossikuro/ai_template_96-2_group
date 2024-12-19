@@ -48,7 +48,7 @@
 }
 /* ----- корневые настройки ----- */
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
 }
 
 body {
@@ -57,7 +57,7 @@ body {
 
 /* ----- кнопки и ссылки ----- */
 .values {
-  background-color: #1B1B1B;
+  background-color: #1b1b1b;
 }
 
 .values_box {
@@ -112,7 +112,7 @@ body {
     padding-left: 3rem;
   }
   .values_title {
-    font-family: "Inter-bold", serif;
+    font-family: "Cormorant-semibold", serif;
     font-size: 1.25rem;
     line-height: 1.75rem;
   }

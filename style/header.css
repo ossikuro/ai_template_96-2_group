@@ -48,11 +48,139 @@
 }
 /* ----- корневые настройки ----- */
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
 }
 
 body {
   background-color: #151515;
 }
 
-/* ----- кнопки и ссылки ----- *//*# sourceMappingURL=header.css.map */
+/* ----- кнопки и ссылки ----- */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #151515;
+  box-shadow: 0 0.25rem 1.5rem -0.5rem #151515;
+}
+
+.header_menu {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 0;
+}
+
+.header_logo {
+  width: 18.75rem;
+  height: 2.5rem;
+  fill: #c9ac9c;
+}
+.header_logo svg {
+  width: 100%;
+  height: 100%;
+}
+
+.header_button {
+  display: flex;
+  gap: 0.25rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #685c54;
+  fill: #685c54;
+  font-family: "Cormorant-regular", serif;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  cursor: pointer;
+}
+.header_button svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: block;
+}
+.header_button svg use {
+  height: 100%;
+  width: 100%;
+}
+.header_button:hover {
+  color: #a68f82;
+  fill: #a68f82;
+}
+.header_button:active {
+  color: #84736a;
+  fill: #84736a;
+}
+
+.header_beige_button {
+  height: 1.5rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  color: #fff;
+  background-color: #84736a;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+.header_beige_button .text {
+  font-family: "Inter-bold", serif;
+  font-size: 1rem;
+  line-height: 160%;
+  padding: 0 1.75rem;
+}
+.header_beige_button:hover {
+  background-color: #c9ac9c;
+}
+.header_beige_button:active {
+  background-color: #a68f82;
+}
+.header_beige_button svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.header_beige_button use {
+  width: 100%;
+  height: 100%;
+}
+
+#header_desctop {
+  display: flex;
+}
+
+#header_mobile {
+  display: none;
+}
+
+@media (max-width: 1280px) {
+  .header {
+    padding: 1rem 1.5rem;
+  }
+  .header_logo {
+    width: 15rem;
+    height: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .header {
+    padding: 1rem;
+    gap: 0.5rem;
+  }
+  #header_desctop {
+    display: none;
+  }
+  .header_menu {
+    gap: 0.25rem;
+  }
+  #header_mobile {
+    display: flex;
+  }
+  .header_beige_button {
+    padding: 0.5rem;
+  }
+}/*# sourceMappingURL=header.css.map */

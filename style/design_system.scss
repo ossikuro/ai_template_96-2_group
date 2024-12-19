@@ -103,7 +103,7 @@
 
 /* ----- цвета и эффекты ----- */
 $white: #fff;
-$grey: #1B1B1B;
+$grey: #1b1b1b;
 $black: #151515;
 $beige_1: #c9ac9c;
 $beige_2: #a68f82;
@@ -135,7 +135,7 @@ $beige_5: #524843;
 
 /* ----- корневые настройки ----- */
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: auto;
 }
 
 body {
@@ -192,5 +192,36 @@ body {
     &:active {
         color: $beige_3;
         fill: $beige_3;
+    }
+}
+
+@mixin header_button {
+    display: flex;
+    gap: 0.25rem;
+    width: fit-content;
+    color: $beige_2;
+    fill: $beige_2;
+    @include cormorant_reg_20-24;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    cursor: pointer;
+
+    svg {
+        width: 1.5rem;
+        height: 1.5rem;
+        display: block;
+        use {
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    &:hover {
+        color: $beige_1;
+        fill: $beige_1;
+    }
+    &:active {
+        color: $beige_2;
+        fill: $beige_2;
     }
 }
