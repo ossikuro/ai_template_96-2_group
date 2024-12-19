@@ -3,7 +3,6 @@
 .history {
     padding-top: 4rem;
     padding-bottom: 4rem;
-    overflow: hidden;
 }
 
 .history_content {
@@ -37,6 +36,9 @@
 
 /* картинки */
 .history_images {
+    position: sticky;
+    top: 4rem;
+    height: 40rem;
     width: 35.5rem;
     flex-shrink: 0;
     box-sizing: border-box;
@@ -101,6 +103,7 @@
     /* картинки */
     .history_images {
         width: 24.75rem;
+        height: 26rem;
     }
 
     .history_author_img {
@@ -156,6 +159,7 @@
 
     /* картинки */
     .history_images {
+        position: static;
         height: calc((100vw - 3rem) * 3 / 4);
         width: 100%;
     }
