@@ -163,7 +163,7 @@ body {
     max-height: calc(100vh - 16rem);
   }
 }
-@media (min-width: 769px) and (max-width: 1280px) {
+@media (max-width: 1280px) and (orientation: landscape) {
   .hero_bottom_line {
     margin-top: 1.5rem;
   }
@@ -215,5 +215,10 @@ body {
     font-size: 1rem;
     line-height: 1.25rem;
     color: #84736a;
+  }
+}
+@media screen and (orientation: landscape) {
+  .hero_top_layer {
+    width: 60.6060606061vh;
   }
 }/*# sourceMappingURL=hero.css.map */

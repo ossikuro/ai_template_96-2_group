@@ -117,7 +117,7 @@
     }
 }
 
-@media (min-width: 769px) and (max-width: 1280px) {
+@media (max-width: 1280px) and (orientation: landscape) {
     .hero_bottom_line {
         margin-top: 1.5rem;
     }
@@ -163,5 +163,11 @@
     .hero_slogan {
         @include cormorant_reg_16-32;
         color: $beige_3;
+    }
+}
+
+@media screen and (orientation: landscape) {
+    .hero_top_layer {
+        width: calc(100vh / 1.65);
     }
 }
