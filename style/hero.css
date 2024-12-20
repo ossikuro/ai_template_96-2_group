@@ -161,6 +161,7 @@ body {
   }
   .hero_bottom_layer img {
     max-height: calc(100vh - 16rem);
+    min-height: 10rem;
   }
 }
 @media (max-width: 1280px) and (orientation: landscape) {
@@ -218,6 +219,9 @@ body {
   }
 }
 @media (max-width: 1280px) and (orientation: landscape) {
+  .hero_bottom_layer {
+    min-height: 10rem;
+  }
   .hero_top_layer {
     width: 60.6060606061vh;
   }
