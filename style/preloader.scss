@@ -8,7 +8,8 @@ body {
 
 body.loaded {
     opacity: 1;
-    overflow: auto; /* Включаем скролл */
+    overflow-y: auto; /* Включаем скролл */
+    max-width: 100vw;
 }
 
 #preloader {

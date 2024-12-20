@@ -120,6 +120,8 @@ body {
   width: 35.5rem;
   flex-shrink: 0;
   box-sizing: border-box;
+  overflow: hidden;
+  max-width: 100%;
 }
 
 .history_author_img {
