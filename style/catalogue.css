@@ -14,13 +14,13 @@
 }
 @font-face {
   font-family: "Cormorant-regular";
-  src: url("../assets/fonts/Cormorant-Regular.ttf");
+  src: url("../assets/fonts/Cormorant-Regular.woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Cormorant-semibold";
-  src: url("../assets/fonts/Cormorant-SemiBold.ttf");
+  src: url("../assets/fonts/Cormorant-SemiBold.woff");
   font-weight: 600;
   font-style: normal;
 }
@@ -48,7 +48,7 @@
 }
 /* ----- корневые настройки ----- */
 html {
-  scroll-behavior: auto;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -56,20 +56,33 @@ body {
 }
 
 /* ----- кнопки и ссылки ----- */
+.catalogue {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.earrings,
+.necklaces,
+.bracelets {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem 0;
+}
+
 .catalogue_title {
   font-family: "Cormorant-semibold", serif;
   font-size: 4rem;
   line-height: 4.25rem;
   color: #fff;
-  margin: 5.25rem 0 2rem 0;
 }
 
 .catalogue_card_box {
   display: flex;
   justify-content: space-between;
   color: #fff;
-  margin-bottom: 5rem;
   flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .card_img {
@@ -85,7 +98,9 @@ body {
 }
 
 .catalogue_card {
-  width: 24%;
+  flex: 1 1 calc(25% - 1rem);
+  width: 100%;
+  margin-bottom: 1rem;
 }
 
 .catalogue_card_text {
@@ -95,7 +110,6 @@ body {
   margin-top: 1rem;
   padding: 0 0.5rem 0 0.5rem;
   width: 80%;
-  height: 4rem;
 }
 
 .catalogue_line {
@@ -127,33 +141,45 @@ body {
 }
 
 @media (min-width: 1025px) and (max-width: 1280px) {
+  .catalogue {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .earrings,
+  .necklaces,
+  .bracelets {
+    gap: 1.5rem;
+  }
   .catalogue_price {
     font-family: "Cormorant-semibold", serif;
     font-size: 2.5rem;
     line-height: 2.75rem;
   }
-  .catalogue_card_text {
-    height: 6rem;
-  }
 }
 @media (max-width: 1024px) {
+  .earrings,
+  .necklaces,
+  .bracelets {
+    gap: 1.5rem;
+  }
   .catalogue_title {
     font-family: "Cormorant-semibold", serif;
     font-size: 2rem;
     line-height: 2.25rem;
-  }
-  .catalogue_card_text {
-    height: 6rem;
   }
   .catalogue_card_box {
     flex-wrap: wrap;
     gap: 1rem;
   }
   .catalogue_card {
-    width: 48.5%;
+    flex: 1 1 calc(50% - 1rem);
   }
 }
 @media (max-width: 768px) {
+  .catalogue {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
   .catalogue_card_text {
     font-family: "Inter-regular", serif;
     font-size: 0.875rem;
@@ -164,38 +190,8 @@ body {
     font-size: 2rem;
     line-height: 2.25rem;
   }
-  .catalogue_card_box {
-    display: block;
-    margin-top: 2rem;
-  }
-  .catalogue_card_text {
-    height: 3rem;
-  }
   .catalogue_card {
-    width: 100%;
-    margin-bottom: 3rem;
-  }
-}
-@media (max-width: 768px) {
-  .catalogue_card_text {
-    font-family: "Inter-regular", serif;
-    font-size: 0.875rem;
-    line-height: 160%;
-  }
-  .catalogue_price {
-    font-family: "Cormorant-semibold", serif;
-    font-size: 2rem;
-    line-height: 2.25rem;
-  }
-  .catalogue_card_box {
-    display: block;
-    margin-top: 2rem;
-  }
-  .catalogue_card_text {
-    height: 3rem;
-  }
-  .catalogue_card {
-    width: 100%;
-    margin-bottom: 3rem;
+    min-width: 12rem;
+    flex: 1 1 calc(50% - 1rem);
   }
 }/*# sourceMappingURL=catalogue.css.map */

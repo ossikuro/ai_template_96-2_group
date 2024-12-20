@@ -29,10 +29,12 @@
 }
 
 .header_button {
-    @include footer_button;
+    @include header_button;
+    display: flex;
 }
 
 .header_beige_button {
+    display: flex;
     height: 1.5rem;
     @include beige_button;
     svg {

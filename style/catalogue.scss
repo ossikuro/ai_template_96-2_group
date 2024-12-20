@@ -1,10 +1,22 @@
 @import 'design_system.scss';
+.catalogue {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.earrings,
+.necklaces,
+.bracelets {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem 0;
+}
 
 // Заголовок секции каталога
 .catalogue_title {
     @include cormorant_semi_64-68;
     color: $white;
-    margin: 5.25rem 0 2rem 0;
 }
 
 // Коробка с карточками
@@ -12,8 +24,8 @@
     display: flex;
     justify-content: space-between;
     color: $white;
-    margin-bottom: 5rem;
     flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .card_img {
@@ -28,7 +40,9 @@
 }
 
 .catalogue_card {
-    width: 24%;
+    flex: 1 1 calc(100% / 4 - 1rem);
+    width: 100%;
+    margin-bottom: 1rem;
 }
 
 .catalogue_card_text {
@@ -36,7 +50,6 @@
     margin-top: 1rem;
     padding: 0 0.5rem 0 0.5rem;
     width: 80%;
-    height: 4rem;
 }
 
 .catalogue_line {
@@ -66,21 +79,31 @@
 }
 
 @media (min-width: 1025px) and (max-width: 1280px) {
+    .catalogue {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .earrings,
+    .necklaces,
+    .bracelets {
+        gap: 1.5rem;
+    }
+
     .catalogue_price {
         @include cormorant_semi_40-44;
-    }
-    .catalogue_card_text {
-        height: 6rem;
     }
 }
 
 @media (max-width: 1024px) {
-    .catalogue_title {
-        @include cormorant_semi_32-36;
+    .earrings,
+    .necklaces,
+    .bracelets {
+        gap: 1.5rem;
     }
 
-    .catalogue_card_text {
-        height: 6rem;
+    .catalogue_title {
+        @include cormorant_semi_32-36;
     }
 
     .catalogue_card_box {
@@ -89,11 +112,16 @@
     }
 
     .catalogue_card {
-        width: 48.5%;
+        flex: 1 1 calc(100% / 2 - 1rem);
     }
 }
 
 @media (max-width: 768px) {
+    .catalogue {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
     .catalogue_card_text {
         @include inter_regular-14;
     }
@@ -102,41 +130,8 @@
         @include cormorant_semi_32-36;
     }
 
-    .catalogue_card_box {
-        display: block;
-        margin-top: 2rem;
-    }
-
-    .catalogue_card_text {
-        height: 3rem;
-    }
-
     .catalogue_card {
-        width: 100%;
-        margin-bottom: 3rem;
-    }
-}
-
-@media (max-width: 768px) {
-    .catalogue_card_text {
-        @include inter_regular-14;
-    }
-
-    .catalogue_price {
-        @include cormorant_semi_32-36;
-    }
-
-    .catalogue_card_box {
-        display: block;
-        margin-top: 2rem;
-    }
-
-    .catalogue_card_text {
-        height: 3rem;
-    }
-
-    .catalogue_card {
-        width: 100%;
-        margin-bottom: 3rem;
+        min-width: 12rem;
+        flex: 1 1 calc(100% / 2 - 1rem);
     }
 }
