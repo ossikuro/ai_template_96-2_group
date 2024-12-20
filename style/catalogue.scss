@@ -108,11 +108,11 @@
 
     .catalogue_card_box {
         flex-wrap: wrap;
-        gap: 1rem;
+        gap: 1.5rem;
     }
 
     .catalogue_card {
-        flex: 1 1 calc(100% / 2 - 1rem);
+        flex: 1 1 calc(100% / 2 - 1.5rem);
     }
 }
 
@@ -132,6 +132,6 @@
 
     .catalogue_card {
         min-width: 12rem;
-        flex: 1 1 calc(100% / 2 - 1rem);
+        flex: 1 1 calc(100% / 2 - 1.5rem);
     }
 }
