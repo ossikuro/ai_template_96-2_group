@@ -46,6 +46,7 @@
 }
 
 .catalogue_anchor {
+    z-index: 800;
     display: flex;
     align-items: end;
     gap: 0.5rem;
@@ -71,7 +72,6 @@
 
 #anchor_catalogue {
     scroll-behavior: smooth;
-    z-index: 200;
 }
 
 @keyframes bounce {
